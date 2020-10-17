@@ -56,6 +56,17 @@ ul {
   display: flex;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 .conteiner {
   display: flex;
   align-items: center;
@@ -411,4 +422,75 @@ ul {
 .footer .icon-social:hover,
 .footer .icon-social:focus {
   background-color: var(--primary-logo-color);
+}
+
+/* footer-form-telegram */
+
+.footer-form-conteiner {
+  padding-top: 12px;
+  margin-left: 93px;
+}
+
+.title-form-footer {
+  color: var(--primary-fon-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-form-wrapper {
+  display: flex;
+}
+
+.footer-form-telegram {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  background-color: transparent;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.footer-form-telegram::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  height: 50px;
+  margin-left: 8px;
+
+  outline: none;
+  background-color: var(--primary-logo-color);
+  color: var(--primary-fon-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
+
+.footer-form-btn svg {
+  margin-left: 12px;
 }
