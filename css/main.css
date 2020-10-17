@@ -661,6 +661,7 @@ ul {
   letter-spacing: 0.06em;
 
   color: #ffffff;
+  cursor: pointer;
 }
 
 .footer-form-btn svg {
