@@ -784,7 +784,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 
   font-weight: 400;
   font-size: 14px;
